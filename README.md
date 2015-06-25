@@ -8,12 +8,9 @@
 
 **Are you a UriBeacon Developer?** Open an [issue](https://github.com/google/uribeacon/issues) and we will point you at resources to help development and testing.
 
-**Are you looking for UriBeacon Products?** Visit [Blesh](https://www.blesh.com/physical-web),
-[Twocanoes](http://twocanoes.com/products/hardware/physical-web-beacon)
-[KST](https://kstechnologies.com/shop/particle/)
-[iBLio](http://www.iblio.net) or
-[BKON](http://www.bkon.com/uribeacon)
-and also see the flashable implementations on the [GitHub repo](https://github.com/google/uribeacon/blob/master/beacons/README.md).
+**Are you looking for UriBeacon Products?** You can get UriBeacons from any of [these vendors](VENDORS.md).
+
+Also see the flashable implementations on the [GitHub repo](https://github.com/google/uribeacon/blob/master/beacons/README.md).
 
 **Interested in the big picture?** Check out how UriBeacons are used in the [Physical Web](http://google.github.io/physical-web/) project.
 
@@ -104,6 +101,8 @@ table below:
 |t.co         | http://t.co/LEGhQ4i0 | 20     | 14
 
 **Table 1: Sampling of Url Shorteners**
+
+For example, let's say we have a truncated URL of the form "https://www..com". The initial "https://www." is encoded in the scheme prefix and ".com" is encoded as a single byte. This leaves 16 bytes for the remainder of the URL, which leads 16 characters to play with in most cases.
 
 Note that short Urls are mostly transparent: user agents can hide
 short and show long URLs, titles, etc. and configuration tools can
